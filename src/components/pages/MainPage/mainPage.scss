@@ -1,0 +1,126 @@
+.apod-page {
+  background-color: #181511;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    margin-top: 40px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__preloader {
+    margin-top: 60px;
+    color: #FFAE2B;
+    font-size: 28px;
+  }
+}
+
+.apod {
+  border: 1px solid #4B4136;
+  margin: 40px;
+  padding: 40px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 600px auto;
+  }
+}
+
+.imag {
+  &__copyright-box {
+    display: flex;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+
+    &__text {
+      font-size: 18px;
+      padding-right: 4px;
+      color: #FFFFFF;
+    }
+
+    &__name {
+      font-size: 18px;
+      color: #FFAE2B;
+      font-weight: bold;
+    }
+  }
+
+
+  &__wrapper {
+
+  }
+}
+
+.bodyurl {
+  max-width: 580px;
+  max-height: 400px;
+}
+
+.info {
+
+  &__date {
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-bottom: 18px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+  }
+
+  &__description {
+    color: #FFAE2B;
+    font-size: 16px;
+    padding-bottom: 15px;
+    text-align: justify;
+  }
+}
+
+.btn {
+  &__link {
+
+  }
+
+  &__btn {
+    background-color: #FFAE2B;
+    cursor: pointer;
+    font-family: 'Old Standard TT', serif;
+    padding: 14px 24px;
+    font-size: 14px;
+    color: #181511;
+    border: none;
+  }
+}
+
+.error-message {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+
+  &__status {
+    font-weight: bold;
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+
+  &__code {
+    color: #FFAE2B;
+    font-size: 28px;
+  }
+
+  &__message {
+    color: #FFAE2B;
+    font-size: 29px;
+  }
+}
