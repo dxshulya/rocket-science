@@ -5,6 +5,7 @@ import {useGetApodQuery} from "../../../store/apod/apod.api";
 const MainPage: React.FC = () => {
 
     const {data, isLoading, error, isError} = useGetApodQuery("04r4kB79aWIjm79buE1Iq7YWVqUnv38AbUcl8U8D")
+    //const {data, isLoading, error, isError} = useGetApodQuery("")
 
     return (
         <section className="apod-page">
@@ -17,10 +18,14 @@ const MainPage: React.FC = () => {
                 ) : isError ? (
                     <div
                         className="error-message">
-                        <p className="error-message__status">{JSON.stringify(error.status)}</p>
-                        <p className="error-message__code">{JSON.stringify(error.data.error.code).split('"')[1].split('"')[0]}</p>
-                        <p className="error-message__message">{JSON.stringify(error.data.error.message).split('"')[1].split('"')[0]}</p>
+                        Oops!
                     </div>
+                    // <div
+                    //     className="error-message">
+                    //     <p className="error-message__status">{JSON.stringify(error.status)}</p>
+                    //     <p className="error-message__code">{JSON.stringify(error.data.error.code).split('"')[1].split('"')[0]}</p>
+                    //     <p className="error-message__message">{JSON.stringify(error.data.error.message).split('"')[1].split('"')[0]}</p>
+                    // </div>
                 ) : (
                     <div className="apod">
                         <div className="apod__wrapper">
